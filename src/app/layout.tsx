@@ -2,7 +2,6 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Link from "next/link";
-import { ErrorBoundary } from "react-error-boundary";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,10 +22,8 @@ export default function RootLayout({
           <Link href="/">Home</Link>
           <Link href="/slide-overs">Slide-Overs</Link>
           <Link href="/not-existing">Not Found</Link>
-          <Link href="/error-boundary">Error Boundary</Link>          
         </header>
 
-        {/* <ErrorBoundary FallbackComponent={ErrorFallback}>{children}</ErrorBoundary> */}
         <main>{children}</main>
       </body>
     </html>
