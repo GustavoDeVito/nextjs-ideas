@@ -22,6 +22,7 @@ export default function RootLayout({
           <Link href="/">Home</Link>
           <Link href="/slide-overs">Slide-Overs</Link>
           <Link href="/not-existing">Not Found</Link>
+          <Link href="/captcha">ReCaptcha</Link>
         </header>
 
         <main>{children}</main>
