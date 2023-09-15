@@ -23,6 +23,7 @@ export default function RootLayout({
           <Link href="/slide-overs">Slide-Overs</Link>
           <Link href="/not-existing">Not Found</Link>
           <Link href="/captcha">ReCaptcha</Link>
+          <Link href="/image-preview">Image Preview</Link>
         </header>
 
         <main>{children}</main>
