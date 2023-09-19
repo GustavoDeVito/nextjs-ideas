@@ -3,7 +3,7 @@
 export default function Captcha() {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    console.log("Oii");
+    console.log("Submit");
   };
 
   return (

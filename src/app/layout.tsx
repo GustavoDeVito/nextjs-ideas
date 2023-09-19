@@ -24,6 +24,7 @@ export default function RootLayout({
           <Link href="/not-existing">Not Found</Link>
           <Link href="/captcha">ReCaptcha</Link>
           <Link href="/image-preview">Image Preview</Link>
+          <Link href="/calendar">Calendar</Link>
         </header>
 
         <main>{children}</main>
