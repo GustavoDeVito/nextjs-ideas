@@ -5,15 +5,10 @@ import dayGridPlugin from "@fullcalendar/daygrid";
 import interactionPlugin, { DateClickArg } from "@fullcalendar/interaction";
 import timeGridPlugin from "@fullcalendar/timegrid";
 
-import bootstrap5Plugin from "@fullcalendar/bootstrap5";
-
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap-icons/font/bootstrap-icons.css";
 import { useCallback, useState } from "react";
 import {
   EventClickArg,
   EventDropArg,
-  EventSourceInput,
 } from "@fullcalendar/core/index.js";
 import DialogCalendar, {
   DialogEventProps,
@@ -166,7 +161,6 @@ export default function Calendar() {
       <div className="w-full max-w-screen-xl mt-10 mx-auto">
         <FullCalendar
           plugins={[
-            bootstrap5Plugin,
             dayGridPlugin,
             interactionPlugin,
             timeGridPlugin,
