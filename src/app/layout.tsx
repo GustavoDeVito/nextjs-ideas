@@ -26,6 +26,7 @@ export default function RootLayout({
           <Link href="/image-preview">Image Preview</Link>
           <Link href="/calendar">Calendar</Link>
           <Link href="/tree-view">Tree View</Link>
+          <Link href="/context-menu">Context Menu</Link>
         </header>
 
         <main>{children}</main>
