@@ -1,9 +1,13 @@
+import { cn } from "@/lib/utils";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter as FontSans } from "next/font/google"
 import Link from "next/link";
 
-const inter = Inter({ subsets: ["latin"] });
+const fontSans = FontSans({
+  subsets: ["latin"],
+  variable: "--font-sans",
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -12,12 +16,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body  className={cn(
+          "min-h-screen bg-background font-sans antialiased",
+          fontSans.variable
+        )}>
         <header className="p-10 flex gap-3">
           <Link href="/">Home</Link>
           <Link href="/slide-overs">Slide-Overs</Link>
@@ -27,6 +34,7 @@ export default function RootLayout({
           <Link href="/calendar">Calendar</Link>
           <Link href="/tree-view">Tree View</Link>
           <Link href="/context-menu">Context Menu</Link>
+          <Link href="/editor">Editor Rich Text</Link>
         </header>
 
         <main>{children}</main>
